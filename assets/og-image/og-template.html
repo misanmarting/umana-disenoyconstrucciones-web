@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--
+  OG IMAGE TEMPLATE — Construcciones José Luis Umaña
+  Tamaño: 1200 × 630px
+  Para capturar: abrir en Chrome, zoom al 100%, capturar pantalla o usar puppeteer
+  Resultado: guardar como og-image.jpg y referenciar en meta og:image
+-->
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1200px;
+      height: 630px;
+      overflow: hidden;
+      background: #0D0D0D;
+      font-family: 'Montserrat', 'Arial Black', sans-serif;
+      position: relative;
+    }
+
+    /* Fondo: gradient mesh */
+    .bg-glow {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse at 15% 50%, rgba(201, 151, 46, 0.12) 0%, transparent 55%),
+        radial-gradient(ellipse at 80% 20%, rgba(201, 151, 46, 0.07) 0%, transparent 45%);
+    }
+
+    /* Patrón de líneas */
+    .bg-pattern {
+      position: absolute;
+      inset: 0;
+      background-image: repeating-linear-gradient(
+        -45deg,
+        transparent,
+        transparent 40px,
+        rgba(201, 151, 46, 0.035) 40px,
+        rgba(201, 151, 46, 0.035) 41px
+      );
+    }
+
+    /* Número "10" decorativo */
+    .decade {
+      position: absolute;
+      right: -2%;
+      top: 50%;
+      transform: translateY(-52%);
+      font-size: 380px;
+      font-weight: 900;
+      color: transparent;
+      -webkit-text-stroke: 1px rgba(201, 151, 46, 0.1);
+      letter-spacing: -0.05em;
+      line-height: 1;
+      user-select: none;
+    }
+
+    /* Borde sutil */
+    .border-frame {
+      position: absolute;
+      inset: 20px;
+      border: 1px solid rgba(201, 151, 46, 0.15);
+      border-radius: 16px;
+    }
+
+    /* Contenido */
+    .content {
+      position: relative;
+      z-index: 10;
+      padding: 70px 80px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #C9972E;
+      background: rgba(201, 151, 46, 0.12);
+      border: 1px solid rgba(201, 151, 46, 0.3);
+      padding: 8px 16px;
+      border-radius: 100px;
+      margin-bottom: 28px;
+      width: fit-content;
+    }
+
+    .headline {
+      font-size: 72px;
+      font-weight: 900;
+      color: #F0EDE8;
+      line-height: 1.05;
+      letter-spacing: -0.03em;
+      margin-bottom: 20px;
+      max-width: 660px;
+    }
+    .headline span { color: #C9972E; }
+
+    .sub {
+      font-size: 22px;
+      color: #9A9994;
+      font-weight: 400;
+      font-family: 'Source Sans 3', Arial, sans-serif;
+      max-width: 560px;
+      line-height: 1.5;
+      margin-bottom: 40px;
+    }
+
+    .trust-bar {
+      display: flex;
+      gap: 40px;
+      align-items: center;
+    }
+    .trust-item { display: flex; flex-direction: column; gap: 2px; }
+    .trust-item strong { font-size: 18px; font-weight: 800; color: #F0EDE8; }
+    .trust-item span { font-size: 12px; color: #9A9994; font-family: Arial, sans-serif; }
+    .trust-div { width: 1px; height: 32px; background: rgba(255,255,255,0.08); }
+
+    /* Logo bottom-right */
+    .logo {
+      position: absolute;
+      bottom: 40px;
+      right: 60px;
+      z-index: 10;
+      text-align: right;
+    }
+    .logo-name {
+      font-size: 16px;
+      font-weight: 800;
+      color: #F0EDE8;
+      letter-spacing: -0.01em;
+    }
+    .logo-name span { color: #C9972E; }
+    .logo-url {
+      font-size: 12px;
+      color: #616159;
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-glow"></div>
+  <div class="bg-pattern"></div>
+  <div class="decade">10</div>
+  <div class="border-frame"></div>
+
+  <div class="content">
+    <div class="badge">★ 10 años construyendo en Santiago</div>
+    <h1 class="headline">
+      Llevamos Tu Proyecto<br>
+      <span>Al Segundo Nivel</span>
+    </h1>
+    <p class="sub">Proyectos habitacionales desde cero en Las Condes, Vitacura y Barnechea. Diseño integral, certificaciones y garantías incluidas.</p>
+    <div class="trust-bar">
+      <div class="trust-item">
+        <strong>10+</strong>
+        <span>Años de experiencia</span>
+      </div>
+      <div class="trust-div"></div>
+      <div class="trust-item">
+        <strong>9+</strong>
+        <span>Proyectos entregados</span>
+      </div>
+      <div class="trust-div"></div>
+      <div class="trust-item">
+        <strong>100%</strong>
+        <span>Certificaciones incluidas</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="logo">
+    <div class="logo-name">JL <span>Umaña</span></div>
+    <div class="logo-url">construyendosuenos.cl</div>
+  </div>
+</body>
+</html>
