@@ -14,7 +14,7 @@ const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matc
     return;
   }
   const stagger = 80;
-  document.querySelectorAll('section, .metrics-strip, .n3__process').forEach(section => {
+  document.querySelectorAll('section, footer, .metrics-strip, .n3__process').forEach(section => {
     const els = section.querySelectorAll('[data-reveal]');
     const io = new IntersectionObserver(entries => {
       entries.forEach(entry => {
